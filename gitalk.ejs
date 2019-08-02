@@ -4,11 +4,11 @@
   <%- js('https://unpkg.com/gitalk/dist/gitalk.min.js') %>
   <script type="text/javascript">
       var gitalk = new Gitalk({
-        clientID: '<%- theme.gitalk.clientID %>',  // 这里一定要注意主题 config.yml 中 clientID 的大小写，否则参数传不过来，对应下边的 "问题一"
-        clientSecret: '<%- theme.gitalk.clientSecret %>',
-        repo: '<%- theme.gitalk.repo %>',
-        owner: '<%- theme.gitalk.owner %>',
-        admin: ['<%- theme.gitalk.admin %>'],
+        clientID: 5bbc41b620db9e4394a3,  // 这里一定要注意主题 config.yml 中 clientID 的大小写，否则参数传不过来，对应下边的 "问题一"
+        clientSecret: 5a2db98ae8047ff695198ed74fd2cdb7c4718f38,
+        repo: 'gittalk',
+        owner: 'tedlsx',
+        admin: ['tedlsx'],
         id: location.pathname,      // 保持默认，官方注释（Ensure uniqueness and length less than 50），文章 URL 不能太长 "问题二"
         distractionFreeMode: false  // 不喜欢评论时候的遮盖层所以选择 false ，而且我觉得这个也没有必要放在 config.yml 中配置
       })
